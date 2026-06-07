@@ -1,0 +1,301 @@
+{
+  "info": {
+    "_postman_id": "4702e8d4-5f83-455e-8ae6-5b034cf0ae34",
+    "name": "Contact List API - Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51805637"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"La respuesta contiene token\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.token).to.exist;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"La respuesta contiene datos del usuario\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.user.email).to.eql(\"nuevotester@tester.com\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"nuevotester@tester.com\",\r\n  \"password\": \"123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://thinking-tester-contact-list.herokuapp.com/users/login",
+          "protocol": "https",
+          "host": [
+            "thinking-tester-contact-list",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "users",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Contacto",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 201\", function () {\r",
+              "    pm.response.to.have.status(201);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El contacto tiene ID generado\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta._id).to.exist;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El nombre del contacto es correcto\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.firstName).to.eql(\"Juana\");\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El contacto tiene owner asignado\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.owner).to.exist;\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIxOTA4ZWU4ZDFjNDAwMTVhZDc3NTciLCJpYXQiOjE3ODA2OTI5NTR9.YsDxMfLWsEDHIqu9XgM1fe6i9QFn2IytajFyscwxo_Y",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n   \"firstName\": \"Juana\",\r\n    \"lastName\": \"Banana\",\r\n  \"birthdate\": \"1990-05-15\",\r\n  \"email\": \"ana.garcia@test.com\",\r\n  \"phone\": \"612345678\",\r\n  \"street1\": \"Calle Mayor 10\",\r\n  \"city\": \"Madrid\",\r\n  \"stateProvince\": \"Madrid\",\r\n  \"postalCode\": \"28001\",\r\n  \"country\": \"Spain\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://thinking-tester-contact-list.herokuapp.com/contacts",
+          "protocol": "https",
+          "host": [
+            "thinking-tester-contact-list",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "contacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Contacto",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El ID del contacto es correcto\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta._id).to.exist;\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El email del contacto es correcto\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.email).to.eql(\"ana.garcia@test.com\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6a2588368860000015c52116",
+          "protocol": "https",
+          "host": [
+            "thinking-tester-contact-list",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "6a2588368860000015c52116"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Editar Contacto",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El campo modificado se actualizó correctamente\", function () {\r",
+              "    const respuesta = pm.response.json();\r",
+              "    pm.expect(respuesta.street1).to.eql(\"Gran Via 25\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"street1\": \"Gran Via 25\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6a2588368860000015c52116",
+          "protocol": "https",
+          "host": [
+            "thinking-tester-contact-list",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "6a2588368860000015c52116"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Contacto",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El mensaje confirma la eliminación\", function () {\r",
+              "    const respuesta = pm.response.text();\r",
+              "    pm.expect(respuesta).to.include(\"deleted\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://thinking-tester-contact-list.herokuapp.com/contacts/6a2588368860000015c52116",
+          "protocol": "https",
+          "host": [
+            "thinking-tester-contact-list",
+            "herokuapp",
+            "com"
+          ],
+          "path": [
+            "contacts",
+            "6a2588368860000015c52116"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2YTIxOTA4ZWU4ZDFjNDAwMTVhZDc3NTciLCJpYXQiOjE3ODA2OTI5NTR9.YsDxMfLWsEDHIqu9XgM1fe6i9QFn2IytajFyscwxo_Y",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
