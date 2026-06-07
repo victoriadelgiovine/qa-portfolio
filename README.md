@@ -33,5 +33,4 @@ Documentación completa en Confluence:
  https://victoriadelgiovine.atlassian.net/wiki/x/cYAD
 
 ## Contacto
-LinkedIn: (agregá tu LinkedIn si tenés)
-Email: (tu mail de contacto profesional)
+Email: victoriadelgiovine@gmail.com
