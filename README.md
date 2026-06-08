@@ -30,7 +30,7 @@ Aplicación web de práctica testeada de forma completa.
 - API Testing con Postman (14 assertions)
 
 Documentación completa en Confluence:
- https://victoriadelgiovine.atlassian.net/wiki/external/ZjhiZDg5OTA0MWE3NDQ2NjgwMDQxMjU5ZDk1NjY3YzI)
+https://victoriadelgiovine.atlassian.net/wiki/external/MWE5Y2YwMDRhNWMyNGI5ZTg0NTU5N2YwNjZhMDk5ZjU
  
 ## Contacto
 Email: victoriadelgiovine@gmail.com
