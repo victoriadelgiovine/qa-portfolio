@@ -1,4 +1,4 @@
-# QA Portfolio - Victoria Paula
+# QA Portfolio - Victoria Paula Del Giovine
 
 ## Sobre mí
 QA Tester en formación con base en Madrid. 
