@@ -1,5 +1,7 @@
 # App BiT — Proyecto en Equipo (No Country)
 
+🔗 **Repositorio del proyecto:** [S06-26-NC-EQUIPO-72](https://github.com/No-Country-simulation/S06-26-NC-EQUIPO--72)
+
 Web app B2G (Business to Government) que consolida datos públicos de movilidad, empleo y salud mental por región, y permite a gestores públicos consultar esa información en lenguaje natural a través de un agente de IA — con el objetivo de orientar políticas de inclusión social basadas en evidencia real.
 
 Desarrollado en equipo (11 personas — Backend, Frontend, IA, Data, QA) durante una simulación laboral ágil de 5 semanas.
