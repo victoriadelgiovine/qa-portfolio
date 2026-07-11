@@ -15,7 +15,7 @@ Los templates fueron adoptados por el equipo y utilizados durante toda la simula
 ## Templates disponibles
 
 ### Caso de Prueba (`Caso-de-prueba.md`)
-Estructura formal para documentar casos de prueba con separación clara entre diseño y ejecución.
+Estructura formal para documentar casos de prueba funcionales, con separación clara entre diseño y ejecución.
 
 Incluye:
 - ID del Criterio de Aceptación asociado
@@ -25,6 +25,15 @@ Incluye:
 - Resultado esperado vs. resultado obtenido
 - Estado (PASÓ / FALLÓ / BLOQUEADO)
 - Sección de evidencia
+
+### Caso de Prueba — Performance/Carga (`Caso-de-prueba-performance.md`)
+Estructura formal para documentar casos de prueba de rendimiento, adaptada a partir de la plantilla de caso funcional. Pensada para escenarios donde no existen criterios de aceptación de performance definidos formalmente por el negocio.
+
+Incluye, además de lo anterior:
+- Configuración de carga (herramienta, load profile, VUs, duración, entorno)
+- Umbral de aceptación definido y justificado explícitamente como supuesto de trabajo cuando no fue provisto por el negocio
+- Tabla de métricas (avg, p90/p95/p99, error %, throughput)
+- Estado ampliado con la opción "Aprobado con observaciones", para resultados que cumplen el umbral pero muestran una tendencia a seguir
 
 ### Reporte de Bug (`Reporte-de-bug.md`)
 Plantilla avanzada para reportar defectos con severidad y prioridad justificadas.
