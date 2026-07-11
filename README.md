@@ -23,15 +23,18 @@ automatización con Playwright.
 ## Proyectos en este portfolio
 
 ### Contact List App
-Aplicación web de práctica testeada de forma completa.
-- Plan de pruebas
-- Suite de casos de prueba (32 casos totales)
-- Testing E2E
-- 7 bugs documentados con severidad y prioridad justificadas
-- API Testing con Postman (14 assertions)
 
-Documentación completa en Confluence:
-https://victoriadelgiovine.atlassian.net/wiki/external/MWE5Y2YwMDRhNWMyNGI5ZTg0NTU5N2YwNjZhMDk5ZjU
+Aplicación web de práctica testeada de forma completa.
+
+**Documentación**
+
+- 📋 [Plan de pruebas](./01-contact-list-app/plan-de-pruebas.md)
+- ✅ [Suite de casos](./01-contact-list-app/suite-casos-gestion-contactos.md)
+- 🌐 [API Testing](./01-contact-list-app/testing-api.md)
+- 🐞 [Reporte de bugs](./01-contact-list-app/reporte-de-bugs.md)
+- 📄 [README del proyecto](./01-contact-list-app/contact-list-app-readme.md)
+  
+## 
 
 ### App BiT (No Country — Proyecto en Equipo)
 Web app B2G (Business to Government) que consolida datos públicos de movilidad, empleo y salud mental por región, con agente de IA para consultas en lenguaje natural. Desarrollada en equipo (11 personas) durante una simulación laboral ágil de 5 semanas.
