@@ -11,6 +11,7 @@ Los casos fueron diseñados a partir de las épicas y criterios de aceptación d
 | Archivo | Descripción |
 |---|---|
 | `casos-de-prueba.md` | Suite completa de casos de prueba, organizada por épica y criterio de aceptación (interfaz, agente de IA, pipeline de datos, ejecución local, mapa estático, conexión front↔API, chat UI, responsive). |
+| `caso-estudio-single-user.md` | Caso de estudio individual: plan de pruebas de estabilidad para usuario único sobre el endpoint de IA, incluyendo la definición de un umbral de aceptación propio (ante ausencia de criterios formales del negocio) y el hallazgo de una latencia fuera de umbral, documentado con transparencia pese a la preferencia inicial del equipo de omitirlo del informe final. |
 
 ## Convenciones utilizadas
 
