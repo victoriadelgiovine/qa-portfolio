@@ -15,5 +15,5 @@ Aplicación web de práctica utilizada para desarrollar y documentar habilidades
 - [Suite de Casos — Login](./suite-casos-login.md)
 - [Suite de Casos — Gestión de Contactos](./suite-casos-gestion-contactos.md)
 - [Suite de Casos — E2E](./suite-casos-e2e.md)
-- [Reporte de Bugs](./reporte-bugs.md)
-- [Testing de API](./testing-api.md)
+- [Reporte de Bugs](./reporte-de-bugs.md)
+- [Testing de API](./Contact%20List%20API%20-%20Testing.postman_collection.json)
