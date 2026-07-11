@@ -28,11 +28,11 @@ Aplicación web de práctica testeada de forma completa.
 
 **Documentación**
 
-- 📋 [Plan de pruebas](./01-contact-list-app/plan-de-pruebas.md)
-- ✅ [Suite de casos](./01-contact-list-app/suite-casos-gestion-contactos.md)
-- 🌐 [API Testing](./01-contact-list-app/testing-api.md)
-- 🐞 [Reporte de bugs](./01-contact-list-app/reporte-de-bugs.md)
-- 📄 [README del proyecto](./01-contact-list-app/contact-list-app-readme.md)
+-  [Plan de pruebas](./01-contact-list-app/plan-de-pruebas.md)
+-  [Suite de casos](./01-contact-list-app/suite-casos-gestion-contactos.md)
+-  [API Testing](./01-contact-list-app/testing-api.md)
+-  [Reporte de bugs](./01-contact-list-app/reporte-de-bugs.md)
+-  [README del proyecto](./01-contact-list-app/contact-list-app-readme.md)
   
 ## 
 
