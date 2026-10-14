@@ -42,9 +42,9 @@ Utilizo Google AI Studio como herramienta de apoyo durante la construcción de l
 
 **Capturas de la aplicación**
 
-![HabitFlow — Pantalla principal y hábitos del día](./assets/habitflow/habitflow-hoy.png)
+![Biblioteca de HabitFlow](assets/habitflow/habitflow-biblioteca.png)
 
-![HabitFlow — Biblioteca de hábitos por categorías](./assets/habitflow/habitflow-biblioteca.png)
+![Vista de hoy de HabitFlow](assets/habitflow/habitflow-hoy.png)
 
 **Estado y alcance**
 
